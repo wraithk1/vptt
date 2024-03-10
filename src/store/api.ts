@@ -10,6 +10,7 @@ export const api = createApi({
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
       'X-Auth': md5(`Valantis_${moment.utc().format('YYYYMMDD')}`),
+      'Referrer-Policy': 'unsafe-url'
     },
   }),
   tagTypes: ['Products', 'UNAUTHORIZED', 'BAD_REQUEST'],
